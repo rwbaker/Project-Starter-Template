@@ -145,8 +145,8 @@ caption     {background:#eee;}
 #body-wrapper   {min-width:760px; max-width:1240px; margin:0px auto;}
 
 /* Nav ---------------------------------------------*/
-ol.nav, .nav ol {border-top:1px dotted #999999;}
-.nav li         {border-bottom:1px dotted #999999;}
+ol.nav, .nav ol {border-top:1px dotted #999;}
+.nav li         {border-bottom:1px dotted #999;}
 .nav a          {display:block; padding:3px 0px 3px 3px; color:#8292a3;}
 .nav a, 
 .nav a:hover    {text-decoration:none;}
