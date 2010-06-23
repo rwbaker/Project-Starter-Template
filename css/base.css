@@ -2,9 +2,7 @@
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,caption,center,cite,code,dd,del,dfn,dialog,div,dl,dt,em,fieldset,figure,font,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,hr,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,p,pre,q,s,samp,section,small,span,strike,strong,sub,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-* Globals
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * Globals
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
  /*--------------------------------------------------------------------
@@ -136,15 +134,23 @@ caption     {background:#eee;}
 
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-* Page / Location Specific
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * Page / Location Specific
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 /* Body ---------------------------------------------*/
 #body-wrapper   {min-width:760px; max-width:1240px; margin:0px auto;}
 
 /* Nav ---------------------------------------------*/
+#main_nav li	{float:left;}
+#main_nav a,
+#main_nav a:hover{text-decoration:none;}
+#main_nav a		{display:block; padding:5px 15px; border:1px dotted #999; border-right:0px; color:#8292a3;}
+#main_nav a:hover{background:#eee;}
+#main_nav li:last-child a{border-right:1px dotted #999;}
+
+
+
+
 ol.nav, .nav ol {border-top:1px dotted #999;}
 .nav li         {border-bottom:1px dotted #999;}
 .nav a          {display:block; padding:3px 0px 3px 3px; color:#8292a3;}
@@ -156,3 +162,18 @@ ol.nav, .nav ol {border-top:1px dotted #999;}
 
 /* Footer ---------------------------------------------*/
 #ft             {margin-top:15px; border-top:1px solid #ccc; padding-top:5px;}
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+ * Media Queries Anyone? 
+ * Mobile styles handled in mobile.css
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+ 
+/* Wide Screens */
+@media screen and (min-width: 1200px) {
+
+#content	{font-size:1.2em;}
+
+}
+

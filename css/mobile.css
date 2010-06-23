@@ -1,0 +1,23 @@
+﻿/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+ * Mobile Rules for 600px MAX WIDTH Devices
+ * @media queries only for for CSS3 complient browsers. 
+ * EG: Safari 4+, Firfox 3.6+, Chrome, MobileSafari, etc. 
+ * (Basically, IE8 and below will not work)
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+@media screen and (max-device-width: 480px), screen and (max-width: 600px) {
+
+/* Switch to a linear format; No floats for key elements */
+#sub_nav,
+#content,
+#main_nav,
+#main_nav li	{width:auto !important; display:block !important; float:none; clear:both;}
+
+/* Base Wrappers */
+.container_12	{width:100%; margin:0px;}
+#body-wrapper	{min-width:100px !important;}
+
+/* Clear Background / Images (no load) */
+#body-wrapper	{background:transparent !important}
+
+}
